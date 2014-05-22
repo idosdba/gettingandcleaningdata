@@ -8,18 +8,18 @@ performed to arrive at the "tidy" data set.
 * The R script is called "run_analysis.R"
 
 ============
-*Description
+###Description
 The script generates a "tidy" data set from the the input [UCI HAR Dataset](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
 ============
-*How to run the script
+###How to run the script
 1. Download the [UCI HAR Dataset](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
-2. Unzip the downloaded file, which generates a directory "UCI HAR Dataset".
-3. Set the "UCI HAR Dataset" directory as the working directory. The script looks for the data files relative to the working directory. 
-4. Execute the script
+1. Unzip the downloaded file, which generates a directory "UCI HAR Dataset".
+1. Set the "UCI HAR Dataset" directory as the working directory. The script looks for the data files relative to the working directory. 
+1. Execute the script
 
 =============
-*High level steps in the script 
+###High level steps in the script 
 1. Reads the data files provided in the "UCI HAR Dataset"
 2. Merges different files belonging to the train and test data sets and makes one "merged" data set.
 3. Extracts a certain number of "raw" variables from the "merged" data set for "extracted" data set, 
@@ -31,12 +31,12 @@ on how I made this selection of variables forming the "extracted" data set.
 a subject and activity.
 
 ==============
-*Output
+###Output
 1. Generates a "tidy" data set with averages of each extracted variable for each activity and each subject. The 
 generated file is "UCI_tidy_dataset.csv" and is located in the working directory.
 
 =================
-* Choice of extracted measurements
+###Choice of extracted measurements
 I decided to limit the "extracted" data set measurements to "raw" data variables only. The file "features_info.txt" 
 in the UCI HAR Dataset describes all the measures. It says the "raw" signals are accelerometer (tAcc-XYZ) 
 and gyroscope (tGyro-XYZ) 3-axial signals over time. The accelerometer signal was further separated into 
