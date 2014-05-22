@@ -23,6 +23,7 @@ to label the data manually. The obtained dataset has been randomly partitioned i
 was selected for generating the training data and 30% the test data. 
 
 * For each record it is provided:
+
 1. Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
 1. Triaxial Angular velocity from the gyroscope. 
 1. A 561-feature vector with time and frequency domain variables. 
