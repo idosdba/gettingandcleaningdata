@@ -22,16 +22,18 @@ linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The
 to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers 
 was selected for generating the training data and 30% the test data. 
 
-* For each record it is provided:
+**For each record it is provided:**
 
 1. Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
-1. Triaxial Angular velocity from the gyroscope. 
-1. A 561-feature vector with time and frequency domain variables. 
-1. Its activity label. 
+1. Triaxial Angular velocity from the gyroscope.
+1. A 561-feature vector with time and frequency domain variables.
+1. Its activity label.
 1. An identifier of the subject who carried out the experiment.
 
-* A full description is available at the site where the data was obtained: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
+* A full description is available at the site where the data was obtained: 
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 
-* The data for the project: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+* The data for the project: 
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
 ### Data Set Information:
