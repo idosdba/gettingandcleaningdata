@@ -9,10 +9,10 @@
 
 ###Project Deliverables
 1. Script: run_analysis.R
-2. Codebook: UCI_tidy_codebook.md
-3. README: Readme.md
+2. Codebook: CodeBook.md
+3. README: README.md
 4. Tidy Data Set: UCI_tidy_dataset.csv
-Please refer to the "UCI_tidy_codebook.md" for a description of the generated tidy data set and the transformations 
+Please refer to the "CodeBook.md" for a description of the generated tidy data set and the transformations 
 performed to arrive at it.
 
 ###Script Description
@@ -26,8 +26,9 @@ performed to arrive at it.
 
 ###High level steps in the script 
 1. Reads the data files that were unzipped from the "UCI HAR Dataset"
-1. Merges different files belonging to the train and test data sets and makes one "merged" data set.
-1. Extracts a certain number of "raw" variables from the "merged" data set for "extracted" data set, 
+1. Manipulates the data files and forms two data sets (train and test).
+1. Merges the two data frames to make one "merged" data set.
+1. Extracts a certain number of variables from the "merged" data set for "extracted" data set, 
 which forms the basis for "tidy" data set. Refer to "Choice of extracted measurements" for explanation 
 on how I made this selection of variables forming the "extracted" data set.
 1. Modifies the column names from the original to make them more human readable.
@@ -44,10 +45,14 @@ I decided to limit the "extracted" data set measurements to "raw" data variables
 in the UCI HAR Dataset describes all the measures. It says the "raw" signals are accelerometer (tAcc-XYZ) 
 and gyroscope (tGyro-XYZ) 3-axial signals over time. The accelerometer signal was further separated into 
 body (tBodyAcc-XYZ) and gravity (tGravityAcc-XYZ) acceleration signals. All these signal are captured 
-for time domain. Every other measure appears to be derived from these raw signals. This is the basis of my
-selection of measurements for my "extracted" data set.
-Then proceeded to extract the mean and standard deviation (project requirement) measurements for these 
-variables(18 in total) only along with the subject, activity name and label making it a total of 21 variables
-in my "extracted" data set. Finally, calculated the averages for these 18 variables for each subject and 
-each activity thus completing the generation of my "tidy" data set.
+for time domain. Further the file states that other signals(Jerk, Magnitude, Frequency) are derived from 
+the same accelerometer and gyroscopic readings by applying other transformations. So, I decided to form 
+my tidy data on just these raw variables. This is the basis of my selection of measurements for the 
+"extracted" data set. Also the project requirements state that we should use only the mean and standard
+deviation measurements for the variables.
+I proceeded to extract the mean and standard deviation measurements for the body acceleration(tBodyAcc-XYZ), 
+gravity acceleration(tGravityAcc-XYZ) and gyroscope(tBodyGyro-XYZ) variables(18 in total) along with 
+the subject, activity name and activity label making it a total of 21 variables in my "extracted" data set. 
+Finally, calculated the averages for these 18 variables for each subject and each activity thus completing 
+the generation of my "tidy" data set.
 
