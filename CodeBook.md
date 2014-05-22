@@ -23,11 +23,11 @@ to label the data manually. The obtained dataset has been randomly partitioned i
 was selected for generating the training data and 30% the test data. 
 
 * For each record it is provided:
-- Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
-- Triaxial Angular velocity from the gyroscope. 
-- A 561-feature vector with time and frequency domain variables. 
-- Its activity label. 
-- An identifier of the subject who carried out the experiment.
+1. Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
+1. Triaxial Angular velocity from the gyroscope. 
+1. A 561-feature vector with time and frequency domain variables. 
+1. Its activity label. 
+1. An identifier of the subject who carried out the experiment.
 
 * A full description is available at the site where the data was obtained: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 
