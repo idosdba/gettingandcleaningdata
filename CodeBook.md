@@ -54,26 +54,27 @@ the tidy data set.
 **Variable Names:**
 The original variables had characters that were not very suitable for processing and human readability. So changed the
 names as per following.
-1. Changed to lower case
-1. Removed "-" character
-1. Removed "()"
-1. Removed the digits and space and the beginning
-1. Changed "-" to "."
+- Changed to lower case
+- Removed "-" character
+- Removed "()"
+- Removed the digits and space and the beginning
+- Changed "-" to "."
 
 For example: the variable name "1 tBodyAcc-mean()-X" changed to "tbodyacc.mean.x"
 
-After calculating the averages in the tidy data set, the variable names are changed to enclose them as in "avg(variablename)"
-So, the average of tbodyacc.mean.x for each subject and each activity is represented by variable "avg(tbodyacc.mean.x)"
-The tidy data set contains the averages for these 18 variables for each subject and each activity.
+After calculating the averages in the tidy data set, the variable names are changed to enclose them 
+as in "avg(variablename)". So, the average of tbodyacc.mean.x for each subject and each activity is 
+represented by variable "avg(tbodyacc.mean.x)"
 
 **For each record it is provided:**
 - Activity descriptive name
 - Subject ID
 - Activity label
-- Averages for each of tri-axial body acceleration
-- Averages for each of tri-axial gravity acceleration
-- Averages for each of tri-axial gyroscope signals
+- Averages for each of tri-axial body acceleration mean and standard deviation measures
+- Averages for each of tri-axial gravity acceleration mean and standard deviation measures
+- Averages for each of tri-axial gyroscope mean and standard deviation measures
 
+**Attributes in the data set**
 1. activity.name
 1. subject.id
 1. activity.label
@@ -96,6 +97,7 @@ The tidy data set contains the averages for these 18 variables for each subject 
 1. avg(tbodygyro.std.y)
 1. avg(tbodygyro.std.z) 
 
+- The tidy data set contains the averages for these 18 variables for each subject and each activity.
 
 ### Relevant Papers
 N/A
