@@ -8,6 +8,7 @@
 * The input data set is from [Human Activity Recognition Using Smartphones Data Set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 
 ###Project Deliverables
+
 1. Script: run_analysis.R
 1. Codebook: CodeBook.md
 1. README: README.md
@@ -17,7 +18,8 @@
 performed to arrive at it.
 
 ###Script Description
-* The script generates a "tidy" data set from the the input [UCI HAR Dataset](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
+* The script is used to read, manipulate, clean, and generate a tidy data set from the 
+input data [UCI HAR Dataset](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
 ###How to run the script
 
@@ -34,15 +36,30 @@ performed to arrive at it.
 1. Extracts a certain number of variables from the "merged" data set for "extracted" data set, 
 which forms the basis for "tidy" data set. Refer to "Choice of extracted measurements" for explanation 
 on how I made this selection of variables forming the "extracted" data set.
-1. Modifies the column names from the original to make them more human readable.
+1. Modifies the column names from the original to make them more human readable. Refer 
+to "Choice of variable names" for explanation of the new names.
 1. Calculates averages (mean) on the extracted data set for each subject and each activity.
 1. Generates a tidy data set that contains averages (calculated above) for the extracted measures for 
 a subject and activity.
 
 ###Output
-
-1. Generates a "tidy" data set with averages of each extracted variable for each activity and each subject. The 
+* Generates a tidy data set with averages of each extracted variable for each activity and each subject. The 
 generated file is "UCI_tidy_dataset.csv" and is located in the working directory.
+
+###Choice of variable names
+The original variables had characters that were not very suitable for processing and human readability. So changed 
+the names as per following.
+- Changed to lower case
+- Removed "-" character
+- Removed "()"
+- Removed the digits and space and the beginning
+- Changed "-" to "."
+
+For example: the variable name "1 tBodyAcc-mean()-X" changed to "tbodyacc.mean.x"
+
+After calculating the averages in the tidy data set, the variable names are changed to enclose them 
+as in "avg(variablename)". So, the average of tbodyacc.mean.x for each subject and each activity is 
+represented by variable "avg(tbodyacc.mean.x)"
 
 ###Choice of extracted measurements
 - I decided to limit the "extracted" data set measurements to "raw" data variables only. The file "features_info.txt" 

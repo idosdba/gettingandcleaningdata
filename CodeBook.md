@@ -30,7 +30,7 @@ was selected for generating the training data and 30% the test data.
 1. Its activity label.
 1. An identifier of the subject who carried out the experiment.
 
-* A full description is available at the site where the data was obtained: 
+* A full description is available at the site where the data were obtained from: 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 
 * The data for the project: 
@@ -52,19 +52,9 @@ the subject, activity name and activity label making it a total of 21 variables.
 the tidy data set.
 
 **Variable Names:**
-The original variables had characters that were not very suitable for processing and human readability. So changed the
-names as per following.
-- Changed to lower case
-- Removed "-" character
-- Removed "()"
-- Removed the digits and space and the beginning
-- Changed "-" to "."
 
-For example: the variable name "1 tBodyAcc-mean()-X" changed to "tbodyacc.mean.x"
-
-After calculating the averages in the tidy data set, the variable names are changed to enclose them 
-as in "avg(variablename)". So, the average of tbodyacc.mean.x for each subject and each activity is 
-represented by variable "avg(tbodyacc.mean.x)"
+* The original variable names had characters that were not very suitable for processing and human readability. 
+* Please refer to the accompanying "README.md" for further explanation on the new variable names.
 
 **For each record it is provided:**
 - Activity descriptive name
@@ -97,6 +87,7 @@ represented by variable "avg(tbodyacc.mean.x)"
 1. avg(tbodygyro.std.x)
 1. avg(tbodygyro.std.y)
 1. avg(tbodygyro.std.z) 
+
 
 - The tidy data set contains the averages for these 18 variables for each subject and each activity.
 
