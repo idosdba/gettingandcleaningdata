@@ -64,8 +64,15 @@ For example: the variable name "1 tBodyAcc-mean()-X" changed to "tbodyacc.mean.x
 
 After calculating the averages in the tidy data set, the variable names are changed to enclose them as in "avg(variablename)"
 So, the average of tbodyacc.mean.x for each subject and each activity is represented by variable "avg(tbodyacc.mean.x)"
+The tidy data set contains the averages for these 18 variables for each subject and each activity.
 
 **For each record it is provided:**
+- Activity descriptive name
+- Subject ID
+- Activity label
+- Averages for each of tri-axial body acceleration
+- Averages for each of tri-axial gravity acceleration
+- Averages for each of tri-axial gyroscope signals
 
 1. activity.name
 1. subject.id
@@ -88,4 +95,12 @@ So, the average of tbodyacc.mean.x for each subject and each activity is represe
 1. avg(tbodygyro.std.x)
 1. avg(tbodygyro.std.y)
 1. avg(tbodygyro.std.z) 
+
+
+### Relevant Papers
+N/A
+
+### Citation Request
+N/A
+
 
