@@ -1,6 +1,6 @@
-##run_anaysis.R
+##run_analysis.R
 * This is a guide for anyone who needs details about the R Script "run_analysis.R" in this repository.
-* Script is part of the project deliverables for "Getting and Cleaning Data" course of the "Johns Hopkins Data Science" track.
+* The script is part of the project deliverables for "Getting and Cleaning Data" course of the "Johns Hopkins Data Science" track.
 
 ###Project Description
 * The purpose of the project is to collect, manipulate, and clean a data set. 
