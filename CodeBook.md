@@ -75,6 +75,7 @@ represented by variable "avg(tbodyacc.mean.x)"
 - Averages for each of tri-axial gyroscope mean and standard deviation measures
 
 **Attributes in the data set**
+
 1. activity.name
 1. subject.id
 1. activity.label
